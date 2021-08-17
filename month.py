@@ -17,6 +17,8 @@ ouput_filname = pyinputplus.inputStr('Please enter the name of the output file: 
 
 #Listákat létrehozni a beolvasott részegységeknek, lista a fileoknak
 chunk_list = []
+
+#(ha nem fordítom meg a file_list-et akkor a 2019-es file miatt csak az első 6 hónapot group-olja)
 file_list = sorted(os.listdir(mypath), reverse=True)
 
 #1, Beolvasni az összes file-t részletekben
